@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         loadMeme()// to load Memes
-    }//jx
+    }//
 
     private fun loadMeme() {
         val queue = Volley.newRequestQueue(this)
@@ -37,12 +37,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun nextMeme(view: View) {
+    fun nextMeme(view: View)         //function for next meme
+    {
 
 
     }
 
-    fun shareMeme(view: View) {
+    fun shareMeme(view: View)        // function for share meme
+    {
 
 
     }
