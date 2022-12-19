@@ -1,5 +1,6 @@
 package com.example.memes
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -77,6 +78,11 @@ class MainActivity : AppCompatActivity() {
 
     fun shareMeme(view: View)        // function for share meme
     {
+        val intent=Intent(Intent.ACTION_SEND)
+        intent.type="text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT,"Heyy!Checkout This Cool Meme on Reddit $currentImageUrl")
+        val chooser=Intent.createChooser(intent,"Share This Meme using..")
+        startActivity(chooser)
 
 
 
